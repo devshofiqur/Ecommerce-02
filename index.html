@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dunrovin Group — Clarity. Depth. Authority.</title>
+<meta name="description" content="Authoritative long-form journalism, analysis, and editorial reporting from the Dunrovin Group.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Reading Progress -->
+<div class="reading-progress" aria-hidden="true">
+  <div class="reading-progress-bar" id="progressBar"></div>
+</div>
+
+<a href="#main" class="skip">Skip to main content</a>
+
+<!-- ═══════════════════════════════
+     TOP BAR
+══════════════════════════════════ -->
+<div class="topbar" role="complementary" aria-label="Site utilities">
+  <div class="topbar-inner">
+    <span class="topbar-date">Saturday, February 21, 2026 &nbsp;·&nbsp; London Edition</span>
+    <nav class="topbar-nav" aria-label="Utility navigation">
+      <a href="#">Subscribe</a>
+      <a href="#">Print Edition</a>
+      <a href="#">Archive</a>
+      <a href="#">About</a>
+    </nav>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════
+     MASTHEAD
+══════════════════════════════════ -->
+<header class="masthead" role="banner">
+  <p class="masthead-eyebrow">Est. MMIV &nbsp;·&nbsp; Independent Editorial</p>
+  <h1 class="masthead-logo">Dunrovin <span>Group</span></h1>
+  <div class="masthead-rule">
+    <div class="masthead-diamond">◆</div>
+  </div>
+  <p class="masthead-tagline">Clarity &nbsp;·&nbsp; Depth &nbsp;·&nbsp; Authority</p>
+  <br>
+</header>
+
+<!-- ═══════════════════════════════
+     PRIMARY NAV
+══════════════════════════════════ -->
+<nav class="primary-nav" id="primaryNav" aria-label="Primary navigation">
+  <div class="nav-inner">
+    <ul class="nav-links" role="list">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">Analysis</a></li>
+      <li><a href="#">Opinion</a></li>
+      <li><a href="#">Reports</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Economy</a></li>
+      <li><a href="#">Politics</a></li>
+      <li><a href="#">Science</a></li>
+      <li><a href="#">Culture</a></li>
+    </ul>
+    <div class="nav-search" role="search">
+      <form class="search-form" action="#" method="get" aria-label="Search articles">
+        <input class="search-input" type="search" name="q" placeholder="Search articles…" aria-label="Search query">
+        <button class="search-btn" type="submit" aria-label="Submit search">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+          </svg>
+        </button>
+      </form>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileDrawer" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Drawer -->
+<div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Analysis</a></li>
+    <li><a href="#">Opinion</a></li>
+    <li><a href="#">Reports</a></li>
+    <li><a href="#">Features</a></li>
+    <li><a href="#">Economy</a></li>
+    <li><a href="#">Politics</a></li>
+    <li><a href="#">Science</a></li>
+    <li><a href="#">Culture</a></li>
+    <li><a href="#">Subscribe</a></li>
+  </ul>
+</div>
+
+<!-- ═══════════════════════════════
+     BREAKING NEWS TICKER
+══════════════════════════════════ -->
+<div class="breaking-banner" role="marquee" aria-live="polite" aria-label="Breaking news">
+  <div class="breaking-label">
+    <span class="breaking-dot" aria-hidden="true"></span>
+    Breaking
+  </div>
+  <div class="breaking-ticker">
+    <div class="ticker-items" aria-label="Latest headlines">
+      Central bank signals pause in rate cycle &nbsp;<span class="ticker-sep" aria-hidden="true">◆</span>&nbsp;
+      Parliamentary committee opens inquiry into digital finance regulation &nbsp;<span class="ticker-sep" aria-hidden="true">◆</span>&nbsp;
+      Global logistics index falls for third consecutive quarter &nbsp;<span class="ticker-sep" aria-hidden="true">◆</span>&nbsp;
+      Infrastructure summit agrees $2.4tn climate investment framework &nbsp;<span class="ticker-sep" aria-hidden="true">◆</span>&nbsp;
+      Central bank signals pause in rate cycle &nbsp;<span class="ticker-sep" aria-hidden="true">◆</span>&nbsp;
+      Parliamentary committee opens inquiry into digital finance regulation &nbsp;<span class="ticker-sep" aria-hidden="true">◆</span>&nbsp;
+      Global logistics index falls for third consecutive quarter &nbsp;<span class="ticker-sep" aria-hidden="true">◆</span>&nbsp;
+      Infrastructure summit agrees $2.4tn climate investment framework
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════
+     MAIN CONTENT
+══════════════════════════════════ -->
+<main id="main">
+
+  <!-- ── Hero Zone ─────────────────── -->
+  <section class="hero-zone" aria-label="Featured stories">
+    <div class="container">
+      <div class="hero-grid">
+
+        <!-- Lead Story -->
+        <article class="hero-lead" aria-label="Lead story">
+          <img
+            class="hero-lead-image"
+            src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&q=80"
+            alt="Modern city skyline at dusk, symbolising economic analysis"
+            width="900" height="520"
+            loading="eager"
+            decoding="async">
+          <div class="hero-lead-overlay">
+            <span class="hero-cat">Analysis &nbsp;·&nbsp; Global Economy</span>
+            <h2 class="hero-lead-title">The Architecture of the Next Financial Order: What the Data Refuses to Say</h2>
+            <p class="hero-lead-deck">Three years after the liquidity crisis, policymakers and central banks are navigating a landscape defined by contradictions — and the conventional playbook is failing to keep pace.</p>
+            <div class="hero-byline">
+              <span class="byline-author">Eleanor Voss</span>
+              <span class="byline-sep" aria-hidden="true">·</span>
+              <span>Senior Economics Correspondent</span>
+              <span class="byline-sep" aria-hidden="true">·</span>
+              <time datetime="2026-02-21">21 February 2026</time>
+              <span class="byline-sep" aria-hidden="true">·</span>
+              <span>12 min read</span>
+            </div>
+            <br>
+            <a href="#" class="read-more-link">
+              Read Full Analysis <span class="arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Sidebar Stories -->
+        <aside class="hero-sidebar" aria-label="More stories">
+          <article class="hero-sidebar-item">
+            <img class="sidebar-img"
+              src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=600&q=75"
+              alt="Parliamentary chamber"
+              width="300" height="130" loading="lazy" decoding="async">
+            <span class="sidebar-cat">Politics</span>
+            <h3 class="sidebar-title"><a href="#">Electoral Reform Bill Clears Committee Despite Coalition Fractures</a></h3>
+            <p class="sidebar-meta">James Calloway &nbsp;·&nbsp; 8 min read</p>
+          </article>
+          <article class="hero-sidebar-item">
+            <img class="sidebar-img"
+              src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&q=75"
+              alt="Technology data visualization"
+              width="300" height="130" loading="lazy" decoding="async">
+            <span class="sidebar-cat">Technology</span>
+            <h3 class="sidebar-title"><a href="#">AI Governance Frameworks and the Sovereignty Question No One Is Answering</a></h3>
+            <p class="sidebar-meta">Priya Nair &nbsp;·&nbsp; 11 min read</p>
+          </article>
+          <article class="hero-sidebar-item">
+            <img class="sidebar-img"
+              src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=600&q=75"
+              alt="Woodland trail environmental"
+              width="300" height="130" loading="lazy" decoding="async">
+            <span class="sidebar-cat">Environment</span>
+            <h3 class="sidebar-title"><a href="#">Carbon Markets Are Broken. Here Is How Scientists Propose to Fix Them</a></h3>
+            <p class="sidebar-meta">Theo Marchetti &nbsp;·&nbsp; 7 min read</p>
+          </article>
+        </aside>
+
+        <!-- Bottom Strip -->
+        <div class="hero-bottom" role="region" aria-label="Additional stories">
+          <article class="hero-bottom-item">
+            <span class="hb-cat">Reports</span>
+            <h3 class="hb-title"><a href="#">Supply Chain Resilience Index Q1 2026: Emerging Bottlenecks in Southeast Asia</a></h3>
+            <p class="hb-meta">Research Desk &nbsp;·&nbsp; 15 min</p>
+          </article>
+          <article class="hero-bottom-item">
+            <span class="hb-cat">Culture</span>
+            <h3 class="hb-title"><a href="#">The Long Sunset of Print: What Newsrooms Lose When the Paper Goes Dark</a></h3>
+            <p class="hb-meta">Marina Wells &nbsp;·&nbsp; 9 min</p>
+          </article>
+          <article class="hero-bottom-item">
+            <span class="hb-cat">Science</span>
+            <h3 class="hb-title"><a href="#">New Genomic Research Reframes Our Understanding of Age-Related Cognitive Decline</a></h3>
+            <p class="hb-meta">Dr. Samuel Park &nbsp;·&nbsp; 10 min</p>
+          </article>
+        </div>
+
+      </div><!-- /hero-grid -->
+    </div>
+  </section>
+
+  <!-- ── Data Highlight ─────────────── -->
+  <div class="container">
+    <div class="data-highlight fade-in" role="region" aria-label="Key statistics">
+      <div class="data-stat">
+        <div class="ds-number">4.2<span class="ds-unit">%</span></div>
+        <div class="ds-label">Global GDP Growth</div>
+        <div class="ds-change up" aria-label="Up 0.3 percent">▲ +0.3% vs prior quarter</div>
+      </div>
+      <div class="data-stat">
+        <div class="ds-number">$2.4<span class="ds-unit">T</span></div>
+        <div class="ds-label">Climate Investment</div>
+        <div class="ds-change up" aria-label="Up 12 percent year on year">▲ +12% year-on-year</div>
+      </div>
+      <div class="data-stat">
+        <div class="ds-number">68<span class="ds-unit">%</span></div>
+        <div class="ds-label">Renewable Share</div>
+        <div class="ds-change up" aria-label="New record high">▲ New record high</div>
+      </div>
+      <div class="data-stat">
+        <div class="ds-number">5.8<span class="ds-unit">%</span></div>
+        <div class="ds-label">Global Inflation</div>
+        <div class="ds-change down" aria-label="Down 1.1 percent">▼ −1.1% from peak</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Feature Grid ────────────────── -->
+  <section aria-label="In-depth coverage">
+    <div class="container">
+      <div class="section-rule">
+        <div class="section-rule-line"></div>
+        <span class="section-rule-label">In Depth</span>
+        <span class="section-rule-ornament" aria-hidden="true">◆</span>
+        <div class="section-rule-line"></div>
+      </div>
+      <div class="feature-grid fade-in">
+        <article class="feature-card">
+          <span class="fc-number" aria-hidden="true">01</span>
+          <img class="feature-card-img"
+            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=700&q=75"
+            alt="Person analysing financial charts on laptop"
+            width="700" height="394" loading="lazy" decoding="async">
+          <span class="fc-cat">Economy</span>
+          <h3 class="fc-title"><a href="#">Inside the Sovereign Debt Renegotiations Reshaping Three Continents</a></h3>
+          <p class="fc-excerpt">A decade of low interest rates encouraged governments to borrow heavily. Now, as rates normalise, a quiet crisis is unfolding in emerging markets from West Africa to South Asia — and creditors are rewriting the rules.</p>
+          <div class="fc-meta">
+            <span>Alexandra Hunt</span>
+            <span aria-hidden="true">·</span>
+            <time datetime="2026-02-19">19 Feb 2026</time>
+            <span class="fc-read" aria-hidden="true">·</span>
+            <span class="fc-read">18 min read</span>
+          </div>
+        </article>
+        <article class="feature-card">
+          <span class="fc-number" aria-hidden="true">02</span>
+          <img class="feature-card-img"
+            src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=700&q=75"
+            alt="Server room infrastructure cybersecurity"
+            width="700" height="394" loading="lazy" decoding="async">
+          <span class="fc-cat">Security</span>
+          <h3 class="fc-title"><a href="#">The Invisible Infrastructure War: Critical Systems and State-Sponsored Intrusion</a></h3>
+          <p class="fc-excerpt">Attacks on water treatment facilities, power grids, and hospital networks are rising in frequency and sophistication. What governments know — and what they are not telling the public — reveals uncomfortable truths.</p>
+          <div class="fc-meta">
+            <span>Rashid Okonkwo</span>
+            <span aria-hidden="true">·</span>
+            <time datetime="2026-02-18">18 Feb 2026</time>
+            <span class="fc-read">·</span>
+            <span class="fc-read">14 min read</span>
+          </div>
+        </article>
+        <article class="feature-card">
+          <span class="fc-number" aria-hidden="true">03</span>
+          <img class="feature-card-img"
+            src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=700&q=75"
+            alt="Close-up of digital AI interface"
+            width="700" height="394" loading="lazy" decoding="async">
+          <span class="fc-cat">Technology</span>
+          <h3 class="fc-title"><a href="#">When the Algorithm Decides: Accountability Gaps in Automated Governance</a></h3>
+          <p class="fc-excerpt">From benefits assessments to bail decisions, automated systems are making consequential choices about human lives. The legal frameworks meant to provide oversight were built for a different era entirely.</p>
+          <div class="fc-meta">
+            <span>Diana Ferreira</span>
+            <span aria-hidden="true">·</span>
+            <time datetime="2026-02-17">17 Feb 2026</time>
+            <span class="fc-read">·</span>
+            <span class="fc-read">16 min read</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Promo Strip ─────────────────── -->
+  <div class="container">
+    <div class="promo-strip fade-in" role="complementary" aria-label="Editorial note">
+      <div class="promo-text-block">
+        <p class="promo-label">Editor's Standpoint</p>
+        <blockquote class="promo-quote">"Good journalism does not just report what happened. It insists on understanding why — and demands to know who benefits from the confusion."</blockquote>
+        <p class="promo-attribution">— Catherine Drummond, Editor-in-Chief, Dunrovin Group</p>
+      </div>
+      <a href="#" class="promo-cta" aria-label="Subscribe to Dunrovin Group">
+        Subscribe to Dunrovin
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- ── Two Column Layout ──────────── -->
+  <section aria-label="Latest coverage">
+    <div class="container">
+      <div class="section-rule">
+        <div class="section-rule-line"></div>
+        <span class="section-rule-label">Latest</span>
+        <span class="section-rule-ornament" aria-hidden="true">◆</span>
+        <div class="section-rule-line"></div>
+      </div>
+
+      <div class="two-col-layout">
+
+        <!-- Article List -->
+        <div>
+          <ul class="article-list" aria-label="Latest articles">
+            <li class="article-list-item fade-in">
+              <div class="ali-thumb">
+                <img class="ali-img"
+                  src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=500&q=75"
+                  alt="Urban construction site"
+                  width="500" height="282" loading="lazy" decoding="async">
+              </div>
+              <div class="ali-body">
+                <span class="ali-cat">Reports</span>
+                <h3 class="ali-title"><a href="#">Britain's Housing Crisis Has a New Villain: Procurement Rules Written in 1994</a></h3>
+                <p class="ali-excerpt">Post-Brexit procurement legislation has inadvertently made it harder — and more expensive — to build affordable social housing. A Dunrovin investigation reveals the loopholes costing taxpayers billions.</p>
+                <div class="ali-meta">
+                  <span class="ali-author">Robert Finch</span>
+                  <span aria-hidden="true">·</span>
+                  <time datetime="2026-02-21">21 Feb 2026</time>
+                  <span aria-hidden="true">·</span>
+                  <span>13 min read</span>
+                </div>
+              </div>
+            </li>
+            <li class="article-list-item fade-in">
+              <div class="ali-thumb">
+                <img class="ali-img"
+                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=500&q=75"
+                  alt="Medical research laboratory"
+                  width="500" height="282" loading="lazy" decoding="async">
+              </div>
+              <div class="ali-body">
+                <span class="ali-cat">Science</span>
+                <h3 class="ali-title"><a href="#">The Gene Editing Trials That Changed What Doctors Believe About Ageing</a></h3>
+                <p class="ali-excerpt">Results from the Copenhagen Longitudinal Study suggest targeted CRISPR interventions may delay cellular senescence by a decade or more — if regulators can agree on what 'safe' means in this context.</p>
+                <div class="ali-meta">
+                  <span class="ali-author">Dr. Yuki Tanaka</span>
+                  <span aria-hidden="true">·</span>
+                  <time datetime="2026-02-20">20 Feb 2026</time>
+                  <span aria-hidden="true">·</span>
+                  <span>10 min read</span>
+                </div>
+              </div>
+            </li>
+            <li class="article-list-item fade-in">
+              <div class="ali-thumb">
+                <img class="ali-img"
+                  src="https://images.unsplash.com/photo-1548435980-01b3ec428ad6?w=500&q=75"
+                  alt="Diplomats in meeting room"
+                  width="500" height="282" loading="lazy" decoding="async">
+              </div>
+              <div class="ali-body">
+                <span class="ali-cat">Politics</span>
+                <h3 class="ali-title"><a href="#">The G20 Agreement Everyone Agreed To But Nobody Intends to Honour</a></h3>
+                <p class="ali-excerpt">A forensic reading of the Nairobi communiqué — and the private cables obtained by Dunrovin — tells a very different story from the diplomatic language on the surface. Ambiguity was not an accident.</p>
+                <div class="ali-meta">
+                  <span class="ali-author">Cécile Beaumont</span>
+                  <span aria-hidden="true">·</span>
+                  <time datetime="2026-02-20">20 Feb 2026</time>
+                  <span aria-hidden="true">·</span>
+                  <span>11 min read</span>
+                </div>
+              </div>
+            </li>
+            <li class="article-list-item fade-in">
+              <div class="ali-thumb">
+                <img class="ali-img"
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=75"
+                  alt="Portrait of economist"
+                  width="500" height="282" loading="lazy" decoding="async">
+              </div>
+              <div class="ali-body">
+                <span class="ali-cat">Features</span>
+                <h3 class="ali-title"><a href="#">A Conversation With the Economist Who Predicted 2008 — and 2024</a></h3>
+                <p class="ali-excerpt">Over three hours in his Vienna apartment, Luca Bernardi talks about the models that got things right, the warnings that went unheard, and what he sees forming at the edges of the current market structure.</p>
+                <div class="ali-meta">
+                  <span class="ali-author">Helena Marsh</span>
+                  <span aria-hidden="true">·</span>
+                  <time datetime="2026-02-19">19 Feb 2026</time>
+                  <span aria-hidden="true">·</span>
+                  <span>22 min read</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Pagination -->
+          <nav class="pagination" aria-label="Article pagination">
+            <button class="page-btn prev" aria-label="Previous page">‹</button>
+            <button class="page-btn active" aria-label="Page 1, current" aria-current="page">1</button>
+            <button class="page-btn" aria-label="Page 2">2</button>
+            <button class="page-btn" aria-label="Page 3">3</button>
+            <span class="page-dots" aria-hidden="true">…</span>
+            <button class="page-btn" aria-label="Page 14">14</button>
+            <button class="page-btn next" aria-label="Next page">›</button>
+          </nav>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar" aria-label="Sidebar content">
+
+          <!-- Most Read -->
+          <div class="widget">
+            <h2 class="widget-title">Most Read</h2>
+            <ol class="most-read-list" aria-label="Most read articles">
+              <li class="mr-item">
+                <span class="mr-number" aria-hidden="true">1</span>
+                <div>
+                  <h3 class="mr-title"><a href="#">Why the IMF's Growth Models Keep Getting Emerging Markets Wrong</a></h3>
+                  <p class="mr-cat">Economy</p>
+                </div>
+              </li>
+              <li class="mr-item">
+                <span class="mr-number" aria-hidden="true">2</span>
+                <div>
+                  <h3 class="mr-title"><a href="#">The Quiet Privatisation of Public Water Systems in Rural Europe</a></h3>
+                  <p class="mr-cat">Environment</p>
+                </div>
+              </li>
+              <li class="mr-item">
+                <span class="mr-number" aria-hidden="true">3</span>
+                <div>
+                  <h3 class="mr-title"><a href="#">AI and the Law: When a Machine Commits a Crime, Who Is Liable?</a></h3>
+                  <p class="mr-cat">Technology</p>
+                </div>
+              </li>
+              <li class="mr-item">
+                <span class="mr-number" aria-hidden="true">4</span>
+                <div>
+                  <h3 class="mr-title"><a href="#">The Nuclear Renaissance Nobody Voted For</a></h3>
+                  <p class="mr-cat">Energy</p>
+                </div>
+              </li>
+              <li class="mr-item">
+                <span class="mr-number" aria-hidden="true">5</span>
+                <div>
+                  <h3 class="mr-title"><a href="#">Inside the World's Largest Refugee Infrastructure Project</a></h3>
+                  <p class="mr-cat">Reports</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="newsletter-widget widget" role="complementary" aria-label="Newsletter signup">
+            <h2 class="widget-title">Daily Briefing</h2>
+            <p class="newsletter-headline">The most important stories, analysed and contextualised.</p>
+            <p class="newsletter-sub">Every morning, before the noise begins. Join 140,000 readers who start their day with Dunrovin.</p>
+            <form class="newsletter-form" action="#" method="post" aria-label="Newsletter subscription form">
+              <input class="newsletter-input" type="email" name="email" placeholder="your@email.com" required aria-label="Email address" autocomplete="email">
+              <button class="newsletter-btn" type="submit">Subscribe Free</button>
+              <p class="newsletter-note">No advertisements. Unsubscribe anytime.</p>
+            </form>
+          </div>
+
+          <!-- Topics -->
+          <div class="widget">
+            <h2 class="widget-title">Browse Topics</h2>
+            <ul class="topics-list" role="list">
+              <li class="topic-item">
+                <span class="topic-name">Global Economy</span>
+                <span class="topic-count" aria-label="48 articles">48</span>
+              </li>
+              <li class="topic-item">
+                <span class="topic-name">Climate &amp; Environment</span>
+                <span class="topic-count" aria-label="36 articles">36</span>
+              </li>
+              <li class="topic-item">
+                <span class="topic-name">Technology &amp; AI</span>
+                <span class="topic-count" aria-label="41 articles">41</span>
+              </li>
+              <li class="topic-item">
+                <span class="topic-name">Geopolitics</span>
+                <span class="topic-count" aria-label="29 articles">29</span>
+              </li>
+              <li class="topic-item">
+                <span class="topic-name">Health &amp; Science</span>
+                <span class="topic-count" aria-label="33 articles">33</span>
+              </li>
+              <li class="topic-item">
+                <span class="topic-name">Culture &amp; Society</span>
+                <span class="topic-count" aria-label="22 articles">22</span>
+              </li>
+              <li class="topic-item">
+                <span class="topic-name">Law &amp; Justice</span>
+                <span class="topic-count" aria-label="18 articles">18</span>
+              </li>
+            </ul>
+          </div>
+
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Opinion Section ────────────── -->
+  <section aria-label="Opinion and editorial">
+    <div class="container">
+      <div class="section-rule">
+        <div class="section-rule-line"></div>
+        <span class="section-rule-label">Opinion</span>
+        <span class="section-rule-ornament" aria-hidden="true">◆</span>
+        <div class="section-rule-line"></div>
+      </div>
+      <div class="opinion-grid fade-in">
+
+        <!-- Featured Opinion -->
+        <article class="opinion-card featured">
+          <div>
+            <div class="oc-tag"><span class="tag-line" aria-hidden="true"></span> Featured Essay</div>
+            <h3 class="oc-title"><a href="#">The Poverty of Techno-Optimism: Why Silicon Valley's Solutions Keep Making Things Worse</a></h3>
+            <p class="oc-excerpt">For a generation, we have been told that technology disrupts problems into solutions. The evidence is mounting that in complex social systems, the opposite is frequently true — and that the people paying the price are rarely the ones designing the products.</p>
+            <div class="oc-author-block">
+              <img class="oc-avatar"
+                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=88&q=80"
+                alt="Portrait of Professor Sarah Kovacs"
+                width="44" height="44" loading="lazy">
+              <div>
+                <p class="oc-author-name">Prof. Sarah Kovacs</p>
+                <p class="oc-author-role">Technology Ethics, University of Edinburgh</p>
+              </div>
+            </div>
+          </div>
+          <img class="oc-featured-img"
+            src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=700&q=75"
+            alt="Abstract AI visualization"
+            width="700" height="260" loading="lazy" decoding="async">
+        </article>
+
+        <!-- Opinion 2 -->
+        <article class="opinion-card">
+          <div class="oc-tag"><span class="tag-line" aria-hidden="true"></span> Economics</div>
+          <div class="oc-read-time">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            9 min read
+          </div>
+          <h3 class="oc-title"><a href="#">Austerity's Long Shadow: The Public Services We Lost and Cannot Easily Rebuild</a></h3>
+          <p class="oc-excerpt">A decade of fiscal consolidation did not simply reduce spending. It dismantled institutional knowledge, scattered professional networks, and created structural fragilities that now cost far more to remedy than the original savings achieved.</p>
+          <div class="oc-author-block">
+            <img class="oc-avatar"
+              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=88&q=80"
+              alt="Portrait of Marcus Webb"
+              width="44" height="44" loading="lazy">
+            <div>
+              <p class="oc-author-name">Marcus Webb</p>
+              <p class="oc-author-role">Economic Policy Correspondent</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Opinion 3 -->
+        <article class="opinion-card">
+          <div class="oc-tag"><span class="tag-line" aria-hidden="true"></span> Geopolitics</div>
+          <div class="oc-read-time">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            7 min read
+          </div>
+          <h3 class="oc-title"><a href="#">The Multipolar World Arrived Early. We Were Not Prepared for What It Looks Like</a></h3>
+          <p class="oc-excerpt">Strategic analysts spent decades theorising the transition from unipolarity. But the actual texture of the new order — fragmented, transactional, and ideologically incoherent — was almost entirely unanticipated.</p>
+          <div class="oc-author-block">
+            <img class="oc-avatar"
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=88&q=80"
+              alt="Portrait of Dr. Amara Diallo"
+              width="44" height="44" loading="lazy">
+            <div>
+              <p class="oc-author-name">Dr. Amara Diallo</p>
+              <p class="oc-author-role">International Relations, LSE</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Category Band ──────────────── -->
+  <div class="category-band" role="navigation" aria-label="Browse by category">
+    <div class="category-band-inner">
+      <span class="cb-label">Sections</span>
+      <ul class="cb-list" role="list">
+        <li><a href="#" class="cb-item"><span class="cb-name">Analysis</span><span class="cb-count">48 pieces</span></a></li>
+        <li><a href="#" class="cb-item"><span class="cb-name">Opinion</span><span class="cb-count">31 pieces</span></a></li>
+        <li><a href="#" class="cb-item"><span class="cb-name">Reports</span><span class="cb-count">27 pieces</span></a></li>
+        <li><a href="#" class="cb-item"><span class="cb-name">Features</span><span class="cb-count">19 pieces</span></a></li>
+        <li><a href="#" class="cb-item"><span class="cb-name">Economy</span><span class="cb-count">54 pieces</span></a></li>
+        <li><a href="#" class="cb-item"><span class="cb-name">Politics</span><span class="cb-count">39 pieces</span></a></li>
+      </ul>
+    </div>
+  </div>
+
+</main>
+
+<!-- ═══════════════════════════════
+     FOOTER
+══════════════════════════════════ -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-top">
+    <div class="footer-top-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">Dunrovin <span>Group</span></div>
+        <p class="footer-tagline">Clarity. Depth. Authority.</p>
+        <p class="footer-about">Independent editorial journalism covering the ideas, events, and forces shaping the world. Published continuously since 2004 and read in 120 countries.</p>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-col-title">Sections</h3>
+        <ul>
+          <li><a href="#">Analysis</a></li>
+          <li><a href="#">Opinion</a></li>
+          <li><a href="#">Reports</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Economy</a></li>
+          <li><a href="#">Politics</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-col-title">Company</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Editorial Standards</a></li>
+          <li><a href="#">Our Journalists</a></li>
+          <li><a href="#">Corrections Policy</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Advertise</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-col-title">Subscribe</h3>
+        <ul>
+          <li><a href="#">Daily Briefing</a></li>
+          <li><a href="#">Weekly Digest</a></li>
+          <li><a href="#">Print Edition</a></li>
+          <li><a href="#">RSS Feeds</a></li>
+          <li><a href="#">Podcast</a></li>
+          <li><a href="#">Archive</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <p class="footer-copy">&copy; 2026 Dev-Shofiqr. All rights reserved.</p>
+      <nav class="footer-legal" aria-label="Legal links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Sitemap</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
